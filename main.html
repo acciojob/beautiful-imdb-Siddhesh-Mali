@@ -1,16 +1,44 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .movie-detail {
+  display: flex;
+  align-items: center;
+}
+
+.moviePic {
+  height: 300px;
+  width: 200px;
+  margin-right: 20px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.moviePic:hover {
+  opacity: 1;
+}
+
+.movieDetail {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60%;
+  text-align: justify;
+  font-size: 18px;
+  line-height: 1.5;
+}
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <div class="movie-detail">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWLWX13OXJLD6aBw0lt-0XPHC1l1en31e46LIqHYbxGg&s" alt="Movie Poster" class="moviePic">
+        <p class="movieDetail">A working-class Italian-American bouncer becomes the driver for an African-American classical pianist on a tour of venues through the 1960s American South.</p>
+      </div>
+      
 </body>
-
 </html>
